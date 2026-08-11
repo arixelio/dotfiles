@@ -7,9 +7,11 @@
 	rebase = true
 [init]
 	defaultBranch = main
+[include]
+	path = ~/gitconfig.d/00-personal.gitconfig
 [includeIf "gitdir:~/Projects/code-personal/"]
-	path = ~/gitconfig.d/personal.gitconfig
-[includeIf "gitdir:~/Projects/code-work/"]
-	path = ~/gitconfig.d/work.gitconfig
+	path = ~/gitconfig.d/00-personal.gitconfig
 [includeIf "gitdir:~/Projects/code-oss/"]
-	path = ~/gitconfig.d/oss.gitconfig
+	path = ~/gitconfig.d/10-oss.gitconfig
+[includeIf "gitdir:~/Projects/code-work/"]
+	path = ~/gitconfig.d/20-work.gitconfig
