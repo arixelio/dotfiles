@@ -1,0 +1,15 @@
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
+	eol = lf
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/Projects/code-personal/"]
+	path = ~/gitconfig.d/personal.gitconfig
+[includeIf "gitdir:~/Projects/code-work/"]
+	path = ~/gitconfig.d/work.gitconfig
+[includeIf "gitdir:~/Projects/code-oss/"]
+	path = ~/gitconfig.d/oss.gitconfig

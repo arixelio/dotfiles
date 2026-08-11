@@ -1,0 +1,11 @@
+Include ~/.ssh/config.d/00-local.conf
+Include ~/.ssh/config.d/01-git.conf
+Include ~/.ssh/config.d/02-virt.conf
+Include ~/.ssh/config.d/10-personal.conf
+Include ~/.ssh/config.d/20-work.conf
+
+Host *
+  AddKeysToAgent yes
+  SetEnv TERM=xterm-256color
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
