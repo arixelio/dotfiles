@@ -15,3 +15,4 @@
 	path = ~/gitconfig.d/10-oss.gitconfig
 [includeIf "gitdir:~/Projects/code-work/"]
 	path = ~/gitconfig.d/20-work.gitconfig
+
